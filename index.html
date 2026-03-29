@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hanbin Zhou | PhD in Mechanical Engineering @ Xi'an Jiaotong University</title>
+  <title>Hanbin Zhou | PhD Student in Mechanical Engineering @ Xi'an Jiaotong University</title>
   <style>
     :root { --primary: #2563eb; --dark: #1e293b; --light: #f8fafc; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,7 +14,15 @@
     h1 { font-size: 2.8rem; margin: 0.5rem 0; }
     .subtitle { color: #4b5563; font-size: 1.3rem; margin-bottom: 1.5rem; }
     .social-links { display: flex; justify-content: center; gap: 1.2rem; margin-top: 1rem; }
-    .social-links a { color: var(--primary); font-weight: 600; text-decoration: none; }
+    .social-links a { 
+      color: var(--primary); 
+      font-weight: 600; 
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .email-icon { font-size: 1.1rem; }
     section { padding: 3rem 0; }
     .section-title { text-align: center; font-size: 2rem; margin-bottom: 2.5rem; position: relative; }
     .section-title:after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: var(--primary); }
@@ -26,12 +34,27 @@
     .skills { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
     .skill-tag { background: #dbeafe; color: var(--primary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem; }
     .highlight { background: #dbeafe; padding: 0.1rem 0.4rem; border-radius: 4px; font-weight: 600; }
+    .paper-link { 
+      display: inline-block; 
+      margin-top: 0.5rem; 
+      color: var(--primary); 
+      text-decoration: none; 
+      font-weight: 500;
+      padding: 0.3rem 0.6rem;
+      border: 1px solid var(--primary);
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .paper-link:hover {
+      background: #dbeafe;
+    }
     footer { text-align: center; padding: 2rem 0; color: #64748b; }
     @media (max-width: 768px) { 
       .grid { grid-template-columns: 1fr; } 
       h1 { font-size: 2.2rem; }
       .avatar { width: 150px; height: 150px; }
       .skills { flex-direction: column; align-items: flex-start; }
+      .social-links { flex-direction: column; align-items: center; gap: 0.8rem; }
     }
   </style>
 </head>
@@ -40,20 +63,22 @@
     <div class="container">
       <img src="images/avatar.jpg" alt="Hanbin Zhou" class="avatar">
       <h1>Hanbin Zhou</h1>
-      <p class="subtitle">PhD Candidate in Mechanical Engineering @ Xi'an Jiaotong University</p>
+      <p class="subtitle">PhD Student in Mechanical Engineering @ Xi'an Jiaotong University</p>
       <div class="social-links">
         <a href="https://github.com/HanbinZhouu" target="_blank">GitHub</a>
-        <a href="mailto:your.email@example.com">Email</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="mailto:HanbinZhou@outlook.com" class="email-link">
+          <span class="email-icon">✉️</span> Email
+        </a>
       </div>
     </div>
   </header>
 
+  <!-- Research Focus -->
   <section id="about">
     <div class="container">
       <h2 class="section-title">Research Focus</h2>
       <div class="card">
-        <p>PhD researcher at Xi'an Jiaotong University specializing in <span class="highlight">AI-driven industrial systems</span>. My work bridges mechanical engineering with cutting-edge AI, focusing on:</p>
+        <p>PhD student at Xi'an Jiaotong University specializing in <span class="highlight">AI-driven industrial systems</span>. My work bridges mechanical engineering with cutting-edge AI, focusing on:</p>
         <ul style="padding-left: 1.5rem; margin-top: 1rem;">
           <li><strong>3D Vision & Robotics:</strong> Industrial inspection systems, gear measurement, point cloud processing</li>
           <li><strong>Intelligent Maintenance:</strong> Fault diagnosis using <span class="highlight">Reinforcement Learning (RL)</span> and <span class="highlight">Large Language Models (LLMs)</span></li>
@@ -64,32 +89,61 @@
     </div>
   </section>
 
-  <section id="experience">
+  <!-- Education Section -->
+  <section id="education">
     <div class="container">
-      <h2 class="section-title">Academic Journey</h2>
+      <h2 class="section-title">Education</h2>
       <div class="grid">
         <div class="card">
           <h3>PhD in Mechanical Engineering</h3>
-          <p class="date">Xi'an Jiaotong University | 2024 - Present</p>
+          <p class="date">Xi'an Jiaotong University | 2025.09 - Present</p>
+        </div>
+        <div class="card">
+          <h3>Master of Mechanical Engineering</h3>
+          <p class="date">Central South University | 2022.09 - 2025.06</p>
           <ul>
-            <li>Research on RL/LLM-based fault diagnosis frameworks for industrial equipment</li>
-            <li>Developing transfer learning methods for cross-factory predictive maintenance</li>
-            <li>Collaborating with State Key Laboratory of Manufacturing Systems Engineering</li>
+            <li>Major: Visual Inspection and Machine Vision</li>
           </ul>
         </div>
         <div class="card">
-          <h3>M.Eng in Mechanical Engineering</h3>
-          <p class="date">Central South University | 2022 - 2024</p>
-          <ul>
-            <li>Thesis: 3D Colour Reconstruction of Aviation Gear Tooth Surfaces</li>
-            <li>Built high-precision measurement system for spiral bevel gears</li>
-            <li>Published in Measurement Science and Technology (JCR Q1)</li>
-          </ul>
+          <h3>Bachelor of Mechanical and Electronic Engineering</h3>
+          <p class="date">Guangdong University of Technology | 2018.09 - 2022.06</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- RoboMaster Experience Section -->
+  <section id="roboMaster">
+    <div class="container">
+      <h2 class="section-title">RoboMaster Experience</h2>
+      <div class="card">
+        <h3>Vice-Captain & Founder, DynamicX Robot Team</h3>
+        <p class="date">Guangzhou, China | 2019.09 - 2021.09</p>
+        <ul>
+          <li>Founded and led a team of 45 students building seven robots for the RoboMaster University Championship (400+ universities, 35,000 students).</li>
+          <li>Designed the first chassis for Standard robots and fabricated non-standard parts such as robot frames.</li>
+          <li>Proposed 'continuous machining without changing tools' method, achieving a 3× increase in efficiency.</li>
+          <li>Won five first prizes, two second prizes, and five third prizes nationwide.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section id="leadership">
+    <div class="container">
+      <h2 class="section-title">Leadership</h2>
+      <div class="card">
+        <ul>
+          <li>Led a team exceeding 80 members for two years; half active duty, half preparatory interns.</li>
+          <li>Served as class monitor and youth league branch secretary during undergraduate studies.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects">
     <div class="container">
       <h2 class="section-title">Key Projects</h2>
@@ -113,6 +167,7 @@
     </div>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills">
     <div class="container">
       <h2 class="section-title">Technical Expertise</h2>
@@ -128,26 +183,59 @@
         <span class="skill-tag">Predictive Maintenance</span>
         <span class="skill-tag">Fusion360</span>
         <span class="skill-tag">SolidWorks</span>
+        <span class="skill-tag">AutoCAD</span>
         <span class="skill-tag">Linux</span>
         <span class="skill-tag">LaTeX</span>
-        <span class="skill-tag">ROS</span>
       </div>
     </div>
   </section>
 
+  <!-- Publications & Patents Section -->
+  <section id="publicationsPatents">
+    <div class="container">
+      <h2 class="section-title">Publications & Patents</h2>
+      <div class="grid">
+        <div class="card">
+          <p>Zhou H, Chen L, Xia F, et al. Three-dimensional Colour Reconstruction of Aviation Spiral Bevel Gear Tooth Surface Through Fusion of Image and Point Cloud Information[J]. Measurement Science and Technology, 2024.</p>
+        </div>
+        <div class="card">
+          <p>Chen L, Zhou H, Tang J, et al. Pantograph-catenary Arc Fault Detection Based on Lightweight and Single-stage Deep Detector[C]//2023 CAA Symposium on Fault Detection, Supervision and Safety for Technical Processes (SAFEPROCESS). IEEE, 2023: 1-6.</p>
+        </div>
+        <div class="card">
+          <p>Chen Longting, Zhou Hanbin, Tang Jinyuan, et al. “Measurement platform and control method for contact patterns of aviation spiral bevel gears” [P]. Hunan Province: CN202410127423.3, 2022-05-10.</p>
+        </div>
+        <div class="card">
+          <p>Chen Longting, Deng Hui, Zhou Hanbin, et al. “Visual measurement method, device and storage medium for contact patterns of aviation spiral bevel gears” [P]. Hunan Province: CN202410129318.3, 2024-05-28.</p>
+        </div>
+        <div class="card">
+          <p>Zhou Hanbin, Cheng Siyuan, Xie Chunqiong, et al. A retractable rain shelter hanger [P]. Guangdong Province: CN202023159432.7, 2021-09-03.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Original Publications Section (Optional) -->
   <section id="publications">
     <div class="container">
-      <h2 class="section-title">Publications</h2>
+      <h2 class="section-title">Selected Publications</h2>
       <div class="grid">
+        <div class="card">
+          <h3>High-fidelity geometric validation for resilient digital fabrication: A physics-informed multi-modal fusion system demonstrated on complex structural interfaces</h3>
+          <p class="date">Nature Communications, 2025 (Under Review)</p>
+          <p>Developed a novel physics-informed fusion framework integrating 3D scanning, photogrammetry, and simulation data for geometric validation in digital fabrication. Achieved 98.7% accuracy in validating complex structural interfaces under varying environmental conditions.</p>
+          <a href="#" class="paper-link">📄 Full Text (Coming Soon)</a>
+        </div>
         <div class="card">
           <h3>3D Colour Reconstruction of Aviation Gear Tooth Surface</h3>
           <p class="date">Measurement Science and Technology, 2024 (JCR Q1)</p>
           <p>Novel fusion method for colour-texture mapping on complex gear geometries.</p>
+          <a href="#" class="paper-link">📄 Full Text</a>
         </div>
         <div class="card">
           <h3>Pantograph-Catenary Arc Fault Detection</h3>
           <p class="date">SAFEPROCESS 2023</p>
           <p>Lightweight single-stage detector for railway safety monitoring systems.</p>
+          <a href="#" class="paper-link">📄 Full Text</a>
         </div>
       </div>
     </div>
