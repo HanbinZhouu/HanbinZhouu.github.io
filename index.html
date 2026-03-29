@@ -36,7 +36,6 @@
     .grid { grid-template-columns: 1fr; } 
     h1 { font-size: 2.2rem; }
     .avatar { width: 150px; height: 150px; }
-    .skills { flex-direction: column; align-items: flex-start; }
     .nav-links, .social-links { flex-direction: column; align-items: center; gap: 0.5rem; }
   }
 </style>
@@ -49,15 +48,10 @@
     <img src="images/avatar.jpg" alt="Hanbin Zhou" class="avatar">
     <h1>Hanbin Zhou</h1>
     <p class="subtitle">PhD Student in Mechanical Engineering @ Xi'an Jiaotong University</p>
-    <!-- Social / Email / ORCID -->
     <div class="social-links">
       <a href="https://github.com/HanbinZhouu" target="_blank">GitHub</a>
-      <a href="mailto:HanbinZhou@outlook.com">
-        <span class="email-icon">✉️</span> Email
-      </a>
-      <a href="https://orcid.org/0009-0006-3640-7306" target="_blank">
-        <span class="orcid-icon">🔗</span> ORCID
-      </a>
+      <a href="mailto:HanbinZhou@outlook.com"><span class="email-icon">✉️</span> Email</a>
+      <a href="https://orcid.org/0009-0006-3640-7306" target="_blank"><span class="orcid-icon">🔗</span> ORCID</a>
     </div>
   </div>
 </header>
@@ -78,7 +72,7 @@
   </div>
 </nav>
 
-<!-- Sections (保持之前模块内容，这里省略代码重复，可用原文件内容替换) -->
+<!-- About / Research Focus -->
 <section id="about">
   <div class="container">
     <h2 class="section-title">Research Focus</h2>
@@ -94,6 +88,7 @@
   </div>
 </section>
 
+<!-- Education -->
 <section id="education">
   <div class="container">
     <h2 class="section-title">Education</h2>
@@ -115,6 +110,7 @@
   </div>
 </section>
 
+<!-- RoboMaster Experience -->
 <section id="roboMaster">
   <div class="container">
     <h2 class="section-title">RoboMaster Experience</h2>
@@ -131,6 +127,7 @@
   </div>
 </section>
 
+<!-- Leadership -->
 <section id="leadership">
   <div class="container">
     <h2 class="section-title">Leadership</h2>
@@ -143,6 +140,7 @@
   </div>
 </section>
 
+<!-- Projects -->
 <section id="projects">
   <div class="container">
     <h2 class="section-title">Key Projects</h2>
@@ -155,7 +153,7 @@
       <div class="card">
         <h3>Transfer Learning for Cross-Domain Gear Monitoring</h3>
         <p class="date">Ongoing Research</p>
-        <p>Developing domain adaptation techniques to transfer knowledge from lab environments to real-world industrial settings with limited labeled data.</p>
+        <p>Developing domain adaptation techniques to transfer knowledge from lab environments to real-world industrial settings.</p>
       </div>
       <div class="card">
         <h3>3D Colour Reconstruction of Aviation Gear Surfaces</h3>
@@ -166,6 +164,7 @@
   </div>
 </section>
 
+<!-- Skills -->
 <section id="skills">
   <div class="container">
     <h2 class="section-title">Technical Expertise</h2>
@@ -188,45 +187,28 @@
   </div>
 </section>
 
+<!-- Publications & Patents -->
 <section id="publicationsPatents">
   <div class="container">
     <h2 class="section-title">Publications & Patents</h2>
     <div class="grid">
-      <div class="card">
-        <p>Zhou H, Chen L, Xia F, et al. Three-dimensional Colour Reconstruction of Aviation Spiral Bevel Gear Tooth Surface Through Fusion of Image and Point Cloud Information[J]. Measurement Science and Technology, 2024.</p>
-      </div>
-      <div class="card">
-        <p>Chen L, Zhou H, Tang J, et al. Pantograph-catenary Arc Fault Detection Based on Lightweight and Single-stage Deep Detector[C]. IEEE SAFEPROCESS 2023.</p>
-      </div>
-      <div class="card">
-        <p>Chen Longting, Zhou Hanbin, Tang Jinyuan, et al. “Measurement platform and control method for contact patterns of aviation spiral bevel gears” [P]. CN202410127423.3, 2022-05-10.</p>
-      </div>
-      <div class="card">
-        <p>Chen Longting, Deng Hui, Zhou Hanbin, et al. “Visual measurement method, device and storage medium for contact patterns of aviation spiral bevel gears” [P]. CN202410129318.3, 2024-05-28.</p>
-      </div>
-      <div class="card">
-        <p>Zhou Hanbin, Cheng Siyuan, Xie Chunqiong, et al. A retractable rain shelter hanger [P]. CN202023159432.7, 2021-09-03.</p>
-      </div>
+      <div class="card"><p>Zhou H, Chen L, Xia F, et al. Three-dimensional Colour Reconstruction of Aviation Spiral Bevel Gear Tooth Surface Through Fusion of Image and Point Cloud Information[J]. Measurement Science and Technology, 2024.</p></div>
+      <div class="card"><p>Chen L, Zhou H, Tang J, et al. Pantograph-catenary Arc Fault Detection Based on Lightweight and Single-stage Deep Detector[C]. IEEE SAFEPROCESS 2023.</p></div>
+      <div class="card"><p>Chen Longting, Zhou Hanbin, Tang Jinyuan, et al. “Measurement platform and control method for contact patterns of aviation spiral bevel gears” [P]. CN202410127423.3, 2022-05-10.</p></div>
+      <div class="card"><p>Chen Longting, Deng Hui, Zhou Hanbin, et al. “Visual measurement method, device and storage medium for contact patterns of aviation spiral bevel gears” [P]. CN202410129318.3, 2024-05-28.</p></div>
+      <div class="card"><p>Zhou Hanbin, Cheng Siyuan, Xie Chunqiong, et al. A retractable rain shelter hanger [P]. CN202023159432.7, 2021-09-03.</p></div>
     </div>
   </div>
 </section>
 
+<!-- Selected Publications -->
 <section id="publications">
   <div class="container">
     <h2 class="section-title">Selected Publications</h2>
     <div class="grid">
-      <div class="card">
-        <h3>High-fidelity geometric validation for resilient digital fabrication: A physics-informed multi-modal fusion system demonstrated on complex structural interfaces</h3>
-        <p class="date">Nature Communications, 2025 (JCR Q1)</p>
-      </div>
-      <div class="card">
-        <h3>3D Colour Reconstruction of Aviation Gear Tooth Surface</h3>
-        <p class="date">Measurement Science and Technology, 2024 (JCR Q1)</p>
-      </div>
-      <div class="card">
-        <h3>Pantograph-catenary Arc Fault Detection Based on Lightweight and Single-stage Deep Detector</h3>
-        <p class="date">SAFEPROCESS 2023</p>
-      </div>
+      <div class="card"><h3>High-fidelity geometric validation for resilient digital fabrication: A physics-informed multi-modal fusion system demonstrated on complex structural interfaces</h3><p class="date">Nature Communications, 2025 (JCR Q1)</p></div>
+      <div class="card"><h3>3D Colour Reconstruction of Aviation Gear Tooth Surface</h3><p class="date">Measurement Science and Technology, 2024 (JCR Q1)</p></div>
+      <div class="card"><h3>Pantograph-catenary Arc Fault Detection Based on Lightweight and Single-stage Deep Detector</h3><p class="date">SAFEPROCESS 2023</p></div>
     </div>
   </div>
 </section>
