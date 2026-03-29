@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hanbin Zhou | AI & Robotics Researcher</title>
+  <title>Hanbin Zhou | PhD in Mechanical Engineering @ Xi'an Jiaotong University</title>
   <style>
     :root { --primary: #2563eb; --dark: #1e293b; --light: #f8fafc; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -25,11 +25,13 @@
     .date { color: #64748b; font-weight: 500; margin: 0.3rem 0; }
     .skills { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
     .skill-tag { background: #dbeafe; color: var(--primary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem; }
+    .highlight { background: #dbeafe; padding: 0.1rem 0.4rem; border-radius: 4px; font-weight: 600; }
     footer { text-align: center; padding: 2rem 0; color: #64748b; }
     @media (max-width: 768px) { 
       .grid { grid-template-columns: 1fr; } 
       h1 { font-size: 2.2rem; }
       .avatar { width: 150px; height: 150px; }
+      .skills { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -38,7 +40,7 @@
     <div class="container">
       <img src="images/avatar.jpg" alt="Hanbin Zhou" class="avatar">
       <h1>Hanbin Zhou</h1>
-      <p class="subtitle">AI & Robotics Researcher | 3D Vision & CAD Specialist</p>
+      <p class="subtitle">PhD Candidate in Mechanical Engineering @ Xi'an Jiaotong University</p>
       <div class="social-links">
         <a href="https://github.com/HanbinZhouu" target="_blank">GitHub</a>
         <a href="mailto:your.email@example.com">Email</a>
@@ -49,23 +51,39 @@
 
   <section id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title">Research Focus</h2>
       <div class="card">
-        <p>AI researcher specializing in 3D computer vision and industrial robotics. Currently pursuing M.Eng at Central South University with focus on aviation gear measurement systems. Published in Measurement Science and Technology with multiple invention patents. Passionate about bridging deep learning with mechanical engineering challenges.</p>
+        <p>PhD researcher at Xi'an Jiaotong University specializing in <span class="highlight">AI-driven industrial systems</span>. My work bridges mechanical engineering with cutting-edge AI, focusing on:</p>
+        <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+          <li><strong>3D Vision & Robotics:</strong> Industrial inspection systems, gear measurement, point cloud processing</li>
+          <li><strong>Intelligent Maintenance:</strong> Fault diagnosis using <span class="highlight">Reinforcement Learning (RL)</span> and <span class="highlight">Large Language Models (LLMs)</span></li>
+          <li><strong>Adaptive Systems:</strong> Transfer learning for cross-domain industrial applications</li>
+        </ul>
+        <p style="margin-top: 1rem;">Previously developed China's first aviation gear database (6000+ images, 1000+ point clouds) and published in Measurement Science and Technology.</p>
       </div>
     </div>
   </section>
 
   <section id="experience">
     <div class="container">
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title">Academic Journey</h2>
       <div class="grid">
         <div class="card">
-          <h3>Technology Center Intern</h3>
-          <p class="date">Subsidiary of Aero Engine Corporation of China | Aug 2023 - Apr 2024</p>
+          <h3>PhD in Mechanical Engineering</h3>
+          <p class="date">Xi'an Jiaotong University | 2024 - Present</p>
           <ul>
-            <li>Conducted iterative testing on hardware/software system for measuring contact patterns on spiral bevel gears</li>
-            <li>Established China's first high-quality image & point cloud database for aviation spiral bevel gears (6000+ images, 1000+ point clouds)</li>
+            <li>Research on RL/LLM-based fault diagnosis frameworks for industrial equipment</li>
+            <li>Developing transfer learning methods for cross-factory predictive maintenance</li>
+            <li>Collaborating with State Key Laboratory of Manufacturing Systems Engineering</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>M.Eng in Mechanical Engineering</h3>
+          <p class="date">Central South University | 2022 - 2024</p>
+          <ul>
+            <li>Thesis: 3D Colour Reconstruction of Aviation Gear Tooth Surfaces</li>
+            <li>Built high-precision measurement system for spiral bevel gears</li>
+            <li>Published in Measurement Science and Technology (JCR Q1)</li>
           </ul>
         </div>
       </div>
@@ -74,22 +92,22 @@
 
   <section id="projects">
     <div class="container">
-      <h2 class="section-title">Projects & Publications</h2>
+      <h2 class="section-title">Key Projects</h2>
       <div class="grid">
         <div class="card">
-          <h3>3D Colour Reconstruction of Aviation Gear Tooth Surface</h3>
+          <h3>LLM-Enhanced Fault Diagnosis System</h3>
+          <p class="date">Current Project | Xi'an Jiaotong University</p>
+          <p>Integrating large language models with sensor data for interpretable fault diagnosis in rotating machinery. Combines time-series analysis with natural language reasoning for maintenance reports.</p>
+        </div>
+        <div class="card">
+          <h3>Transfer Learning for Cross-Domain Gear Monitoring</h3>
+          <p class="date">Ongoing Research</p>
+          <p>Developing domain adaptation techniques to transfer knowledge from lab environments to real-world industrial settings with limited labeled data.</p>
+        </div>
+        <div class="card">
+          <h3>3D Colour Reconstruction of Aviation Gear Surfaces</h3>
           <p class="date">Measurement Science and Technology, 2024</p>
-          <p>Fused image and point cloud data for accurate 3D colour reconstruction of gear surfaces.</p>
-        </div>
-        <div class="card">
-          <h3>Pantograph-catenary Arc Fault Detection</h3>
-          <p class="date">SAFEPROCESS 2023</p>
-          <p>Developed lightweight single-stage deep detector for railway safety monitoring.</p>
-        </div>
-        <div class="card">
-          <h3>Aviation Gear Contact Pattern Measurement Platform</h3>
-          <p class="date">Invention Patent: CN202410127423.3</p>
-          <p>Designed control method and platform for precise contact pattern measurement.</p>
+          <p>Fused image and point cloud data for accurate surface contact pattern analysis. Enabled non-contact quality assessment for critical aviation components.</p>
         </div>
       </div>
     </div>
@@ -97,35 +115,39 @@
 
   <section id="skills">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title">Technical Expertise</h2>
       <div class="skills">
         <span class="skill-tag">Python</span>
         <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">Reinforcement Learning</span>
+        <span class="skill-tag">LLM Fine-tuning</span>
+        <span class="skill-tag">Transfer Learning</span>
         <span class="skill-tag">OpenCV</span>
         <span class="skill-tag">Open3D</span>
+        <span class="skill-tag">Fault Diagnosis</span>
+        <span class="skill-tag">Predictive Maintenance</span>
         <span class="skill-tag">Fusion360</span>
         <span class="skill-tag">SolidWorks</span>
-        <span class="skill-tag">AutoCAD</span>
-        <span class="skill-tag">CNC Milling</span>
-        <span class="skill-tag">3D Printing</span>
-        <span class="skill-tag">PyQt</span>
-        <span class="skill-tag">LaTeX</span>
         <span class="skill-tag">Linux</span>
+        <span class="skill-tag">LaTeX</span>
+        <span class="skill-tag">ROS</span>
       </div>
     </div>
   </section>
 
-  <section id="awards">
+  <section id="publications">
     <div class="container">
-      <h2 class="section-title">Awards</h2>
+      <h2 class="section-title">Publications</h2>
       <div class="grid">
         <div class="card">
-          <ul>
-            <li><strong>First Prize</strong> - RoboMaster University Championship (200+ teams)</li>
-            <li><strong>Outstanding Graduate</strong> - Guangdong University of Technology (2022)</li>
-            <li><strong>Excellent Communist Youth League Member</strong> - Guangdong Province (Top 4/20000 students)</li>
-            <li><strong>First Class Scholarship</strong> - Central South University (2022)</li>
-          </ul>
+          <h3>3D Colour Reconstruction of Aviation Gear Tooth Surface</h3>
+          <p class="date">Measurement Science and Technology, 2024 (JCR Q1)</p>
+          <p>Novel fusion method for colour-texture mapping on complex gear geometries.</p>
+        </div>
+        <div class="card">
+          <h3>Pantograph-Catenary Arc Fault Detection</h3>
+          <p class="date">SAFEPROCESS 2023</p>
+          <p>Lightweight single-stage detector for railway safety monitoring systems.</p>
         </div>
       </div>
     </div>
